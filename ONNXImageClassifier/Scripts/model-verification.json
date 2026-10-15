@@ -1,0 +1,44 @@
+{
+  "sha256": "c1c513582d56afceff8516c73804e484c81c6a830712ab6d682253f4a3cd042f",
+  "inputs": [
+    {
+      "name": "data",
+      "shape": [
+        1,
+        3,
+        224,
+        224
+      ],
+      "type": "tensor(float)"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "mobilenetv20_output_flatten0_reshape0",
+      "shape": [
+        1,
+        1000
+      ],
+      "type": "tensor(float)"
+    }
+  ],
+  "opset": 7,
+  "final_operator": "Reshape",
+  "top3": [
+    {
+      "index": 258,
+      "label": "Samoyed, Samoyede",
+      "confidence": 0.8309000134468079
+    },
+    {
+      "index": 259,
+      "label": "Pomeranian",
+      "confidence": 0.05327223613858223
+    },
+    {
+      "index": 257,
+      "label": "Great Pyrenees",
+      "confidence": 0.02861812524497509
+    }
+  ]
+}

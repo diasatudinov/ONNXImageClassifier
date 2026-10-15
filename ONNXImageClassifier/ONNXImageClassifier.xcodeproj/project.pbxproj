@@ -1,0 +1,549 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09ABCED771C43C8167595CE6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DC3D19682D099747CE5D78 /* Foundation.framework */; };
+		22C0C84AEBFF674C95692897 /* ONNXImageClassifierApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF69DCC3CBE91C3E50C22C9 /* ONNXImageClassifierApp.swift */; };
+		358A15C4A4E759781F2FE9C4 /* imagenet_labels.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2988F0894FA357A21F1C019A /* imagenet_labels.txt */; };
+		37F77B832E102AB61FCA0D99 /* Pods_ONNXImageClassifier.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55D2C83C5DD53FBB571FA021 /* Pods_ONNXImageClassifier.framework */; };
+		445EF0747820EE2AABE3393D /* ImageClassifierViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B1CEB794BCDB2D557D090E /* ImageClassifierViewModel.swift */; };
+		4F880E7D2F74C338971D3E02 /* ONNXModelService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361A593DC20E196DF0D3491D /* ONNXModelService.swift */; };
+		606BECD0BC3B96A45B9ED3E2 /* PredictionResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B470316BBF7098F46DBEC67 /* PredictionResultView.swift */; };
+		740F8B45669D0A17E0F236A7 /* dog.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C7B65D05D058C700689D85A1 /* dog.jpg */; };
+		8F7325DC1B2CDE7C5F5AE951 /* ClassificationResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F096A9A1620388FC35F507E8 /* ClassificationResult.swift */; };
+		91ABB12977D85B6DD90CF8E6 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 430FAE3331461A538A7CDFA9 /* LICENSE.txt */; };
+		92F0E521FAA1B35E0EF536EA /* mobilenetv2.onnx in Resources */ = {isa = PBXBuildFile; fileRef = 4577D17E1E4D0772286EA2D5 /* mobilenetv2.onnx */; };
+		B04295166D70D2A7A1B65F75 /* ImagePreprocessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4D9BF8859F60CE5EEBED7B /* ImagePreprocessor.swift */; };
+		B42AAEB593F5DA89FAD440C1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DC3D19682D099747CE5D78 /* Foundation.framework */; };
+		CC62947FDA0ED23BC55FEABA /* Pods_ONNXImageClassifierTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38919C1BB9E84AF16454EC12 /* Pods_ONNXImageClassifierTests.framework */; };
+		CDB246AFC0737A3DD6373315 /* ModelOutputProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634BDB2BC9C55E660CED1FC0 /* ModelOutputProcessor.swift */; };
+		ECD140146F2AAE370EAA8D09 /* ImageClassifierView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61B23192158298FFC441C3FE /* ImageClassifierView.swift */; };
+		FE89A45F810A8B0B4DB9F9D7 /* ClassificationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CD4D5B406F97CDACD2A8817 /* ClassificationTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E07EB37281811CD8D523B84D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9EBD3CF15D2619B219F6CB55 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A40FC5EBD4AF599AF30D4A0;
+			remoteInfo = ONNXImageClassifier;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		02AA67FAC0AB5BDE582BB628 /* Pods-ONNXImageClassifier.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONNXImageClassifier.release.xcconfig"; path = "Target Support Files/Pods-ONNXImageClassifier/Pods-ONNXImageClassifier.release.xcconfig"; sourceTree = "<group>"; };
+		2988F0894FA357A21F1C019A /* imagenet_labels.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = imagenet_labels.txt; path = ONNXImageClassifier/Resources/Labels/imagenet_labels.txt; sourceTree = "<group>"; };
+		361A593DC20E196DF0D3491D /* ONNXModelService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ONNXModelService.swift; path = ONNXImageClassifier/Services/MachineLearning/ONNXModelService.swift; sourceTree = "<group>"; };
+		38919C1BB9E84AF16454EC12 /* Pods_ONNXImageClassifierTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ONNXImageClassifierTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B4D9BF8859F60CE5EEBED7B /* ImagePreprocessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImagePreprocessor.swift; path = ONNXImageClassifier/Services/MachineLearning/ImagePreprocessor.swift; sourceTree = "<group>"; };
+		3BFA9127AAF7F1CD98DF5B99 /* Pods-ONNXImageClassifierTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONNXImageClassifierTests.debug.xcconfig"; path = "Target Support Files/Pods-ONNXImageClassifierTests/Pods-ONNXImageClassifierTests.debug.xcconfig"; sourceTree = "<group>"; };
+		430FAE3331461A538A7CDFA9 /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE.txt; path = ONNXImageClassifier/Resources/Models/LICENSE.txt; sourceTree = "<group>"; };
+		4577D17E1E4D0772286EA2D5 /* mobilenetv2.onnx */ = {isa = PBXFileReference; includeInIndex = 1; name = mobilenetv2.onnx; path = ONNXImageClassifier/Resources/Models/mobilenetv2.onnx; sourceTree = "<group>"; };
+		53B1CEB794BCDB2D557D090E /* ImageClassifierViewModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageClassifierViewModel.swift; path = ONNXImageClassifier/Features/ImageClassification/ViewModels/ImageClassifierViewModel.swift; sourceTree = "<group>"; };
+		55D2C83C5DD53FBB571FA021 /* Pods_ONNXImageClassifier.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ONNXImageClassifier.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B470316BBF7098F46DBEC67 /* PredictionResultView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PredictionResultView.swift; path = ONNXImageClassifier/Features/ImageClassification/Views/PredictionResultView.swift; sourceTree = "<group>"; };
+		5CD4D5B406F97CDACD2A8817 /* ClassificationTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassificationTests.swift; path = ONNXImageClassifierTests/ClassificationTests.swift; sourceTree = "<group>"; };
+		61B23192158298FFC441C3FE /* ImageClassifierView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageClassifierView.swift; path = ONNXImageClassifier/Features/ImageClassification/Views/ImageClassifierView.swift; sourceTree = "<group>"; };
+		634BDB2BC9C55E660CED1FC0 /* ModelOutputProcessor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ModelOutputProcessor.swift; path = ONNXImageClassifier/Services/MachineLearning/ModelOutputProcessor.swift; sourceTree = "<group>"; };
+		7FA82D3A3EBED57922E8BE73 /* ONNXImageClassifierTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ONNXImageClassifierTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C990D53AEAF6C0157932E48 /* Pods-ONNXImageClassifierTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONNXImageClassifierTests.release.xcconfig"; path = "Target Support Files/Pods-ONNXImageClassifierTests/Pods-ONNXImageClassifierTests.release.xcconfig"; sourceTree = "<group>"; };
+		9CEAF99506861EBD22113B85 /* Pods-ONNXImageClassifier.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ONNXImageClassifier.debug.xcconfig"; path = "Target Support Files/Pods-ONNXImageClassifier/Pods-ONNXImageClassifier.debug.xcconfig"; sourceTree = "<group>"; };
+		B2DC63241040B0EB00561F41 /* ONNXImageClassifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ONNXImageClassifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5DC3D19682D099747CE5D78 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		C7B65D05D058C700689D85A1 /* dog.jpg */ = {isa = PBXFileReference; includeInIndex = 1; name = dog.jpg; path = ONNXImageClassifierTests/Fixtures/dog.jpg; sourceTree = "<group>"; };
+		DFF69DCC3CBE91C3E50C22C9 /* ONNXImageClassifierApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ONNXImageClassifierApp.swift; path = ONNXImageClassifier/App/ONNXImageClassifierApp.swift; sourceTree = "<group>"; };
+		F096A9A1620388FC35F507E8 /* ClassificationResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ClassificationResult.swift; path = ONNXImageClassifier/Features/ImageClassification/Models/ClassificationResult.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		517C64EBC86BAD4EEF2ADD86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B42AAEB593F5DA89FAD440C1 /* Foundation.framework in Frameworks */,
+				37F77B832E102AB61FCA0D99 /* Pods_ONNXImageClassifier.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E200CFF80DB8BA9D2B1BD265 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09ABCED771C43C8167595CE6 /* Foundation.framework in Frameworks */,
+				CC62947FDA0ED23BC55FEABA /* Pods_ONNXImageClassifierTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3EA64B05EFE147C7ADB358B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8F5EC3965F923C6B0A82E19B /* iOS */,
+				55D2C83C5DD53FBB571FA021 /* Pods_ONNXImageClassifier.framework */,
+				38919C1BB9E84AF16454EC12 /* Pods_ONNXImageClassifierTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59E528476179B7BAD9EC73E7 = {
+			isa = PBXGroup;
+			children = (
+				5A1879150677A590C009A060 /* Products */,
+				3EA64B05EFE147C7ADB358B4 /* Frameworks */,
+				DFF69DCC3CBE91C3E50C22C9 /* ONNXImageClassifierApp.swift */,
+				F096A9A1620388FC35F507E8 /* ClassificationResult.swift */,
+				53B1CEB794BCDB2D557D090E /* ImageClassifierViewModel.swift */,
+				61B23192158298FFC441C3FE /* ImageClassifierView.swift */,
+				5B470316BBF7098F46DBEC67 /* PredictionResultView.swift */,
+				3B4D9BF8859F60CE5EEBED7B /* ImagePreprocessor.swift */,
+				634BDB2BC9C55E660CED1FC0 /* ModelOutputProcessor.swift */,
+				361A593DC20E196DF0D3491D /* ONNXModelService.swift */,
+				2988F0894FA357A21F1C019A /* imagenet_labels.txt */,
+				430FAE3331461A538A7CDFA9 /* LICENSE.txt */,
+				4577D17E1E4D0772286EA2D5 /* mobilenetv2.onnx */,
+				5CD4D5B406F97CDACD2A8817 /* ClassificationTests.swift */,
+				C7B65D05D058C700689D85A1 /* dog.jpg */,
+				6172C9B8EBDBB9A62CE3B368 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		5A1879150677A590C009A060 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B2DC63241040B0EB00561F41 /* ONNXImageClassifier.app */,
+				7FA82D3A3EBED57922E8BE73 /* ONNXImageClassifierTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6172C9B8EBDBB9A62CE3B368 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				02AA67FAC0AB5BDE582BB628 /* Pods-ONNXImageClassifier.release.xcconfig */,
+				9CEAF99506861EBD22113B85 /* Pods-ONNXImageClassifier.debug.xcconfig */,
+				9C990D53AEAF6C0157932E48 /* Pods-ONNXImageClassifierTests.release.xcconfig */,
+				3BFA9127AAF7F1CD98DF5B99 /* Pods-ONNXImageClassifierTests.debug.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8F5EC3965F923C6B0A82E19B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B5DC3D19682D099747CE5D78 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59978150430BB92651B3B231 /* ONNXImageClassifierTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE420BB63289EDF2BB21674F /* Build configuration list for PBXNativeTarget "ONNXImageClassifierTests" */;
+			buildPhases = (
+				E99366284761BE0C2BB95552 /* [CP] Check Pods Manifest.lock */,
+				55AB438EDFA9B1A6F26572BC /* Sources */,
+				E200CFF80DB8BA9D2B1BD265 /* Frameworks */,
+				CC0C1690B821841F5980E135 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2509B1ABC9B03F8BE8BFB606 /* PBXTargetDependency */,
+			);
+			name = ONNXImageClassifierTests;
+			productName = ONNXImageClassifierTests;
+			productReference = 7FA82D3A3EBED57922E8BE73 /* ONNXImageClassifierTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8A40FC5EBD4AF599AF30D4A0 /* ONNXImageClassifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE2C72BD3B85CE5CF2B3F8E0 /* Build configuration list for PBXNativeTarget "ONNXImageClassifier" */;
+			buildPhases = (
+				D608B1844970FA2D82879D6D /* [CP] Check Pods Manifest.lock */,
+				19660D151D4ADAD4B87A8E7E /* Sources */,
+				517C64EBC86BAD4EEF2ADD86 /* Frameworks */,
+				8C368D81E1350B3AB20E8943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ONNXImageClassifier;
+			productName = ONNXImageClassifier;
+			productReference = B2DC63241040B0EB00561F41 /* ONNXImageClassifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9EBD3CF15D2619B219F6CB55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 96E4A3B6B6391D80C428B998 /* Build configuration list for PBXProject "ONNXImageClassifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 59E528476179B7BAD9EC73E7;
+			productRefGroup = 5A1879150677A590C009A060 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8A40FC5EBD4AF599AF30D4A0 /* ONNXImageClassifier */,
+				59978150430BB92651B3B231 /* ONNXImageClassifierTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8C368D81E1350B3AB20E8943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				358A15C4A4E759781F2FE9C4 /* imagenet_labels.txt in Resources */,
+				91ABB12977D85B6DD90CF8E6 /* LICENSE.txt in Resources */,
+				92F0E521FAA1B35E0EF536EA /* mobilenetv2.onnx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC0C1690B821841F5980E135 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				740F8B45669D0A17E0F236A7 /* dog.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D608B1844970FA2D82879D6D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ONNXImageClassifier-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E99366284761BE0C2BB95552 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ONNXImageClassifierTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		19660D151D4ADAD4B87A8E7E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22C0C84AEBFF674C95692897 /* ONNXImageClassifierApp.swift in Sources */,
+				8F7325DC1B2CDE7C5F5AE951 /* ClassificationResult.swift in Sources */,
+				445EF0747820EE2AABE3393D /* ImageClassifierViewModel.swift in Sources */,
+				ECD140146F2AAE370EAA8D09 /* ImageClassifierView.swift in Sources */,
+				606BECD0BC3B96A45B9ED3E2 /* PredictionResultView.swift in Sources */,
+				B04295166D70D2A7A1B65F75 /* ImagePreprocessor.swift in Sources */,
+				CDB246AFC0737A3DD6373315 /* ModelOutputProcessor.swift in Sources */,
+				4F880E7D2F74C338971D3E02 /* ONNXModelService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55AB438EDFA9B1A6F26572BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE89A45F810A8B0B4DB9F9D7 /* ClassificationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2509B1ABC9B03F8BE8BFB606 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ONNXImageClassifier;
+			target = 8A40FC5EBD4AF599AF30D4A0 /* ONNXImageClassifier */;
+			targetProxy = E07EB37281811CD8D523B84D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		33953D94573BDADB45A02480 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		5C169C5D44CFE2D79C71E220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BFA9127AAF7F1CD98DF5B99 /* Pods-ONNXImageClassifierTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.portfolio.ONNXImageClassifierTests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ONNXImageClassifier.app/ONNXImageClassifier";
+			};
+			name = Debug;
+		};
+		7EE8FC15BC3C877BB979EC9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9CEAF99506861EBD22113B85 /* Pods-ONNXImageClassifier.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Image Lens";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.portfolio.ONNXImageClassifier;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8C679A5084CF6623A3048254 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C990D53AEAF6C0157932E48 /* Pods-ONNXImageClassifierTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.portfolio.ONNXImageClassifierTests;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ONNXImageClassifier.app/ONNXImageClassifier";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E6ACACEB8CBE02AD91C2D3D1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02AA67FAC0AB5BDE582BB628 /* Pods-ONNXImageClassifier.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Image Lens";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.portfolio.ONNXImageClassifier;
+				SDKROOT = iphoneos;
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3DCD3348AE74FFDFE39079A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		96E4A3B6B6391D80C428B998 /* Build configuration list for PBXProject "ONNXImageClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33953D94573BDADB45A02480 /* Debug */,
+				F3DCD3348AE74FFDFE39079A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE420BB63289EDF2BB21674F /* Build configuration list for PBXNativeTarget "ONNXImageClassifierTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C679A5084CF6623A3048254 /* Release */,
+				5C169C5D44CFE2D79C71E220 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE2C72BD3B85CE5CF2B3F8E0 /* Build configuration list for PBXNativeTarget "ONNXImageClassifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E6ACACEB8CBE02AD91C2D3D1 /* Release */,
+				7EE8FC15BC3C877BB979EC9B /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9EBD3CF15D2619B219F6CB55 /* Project object */;
+}

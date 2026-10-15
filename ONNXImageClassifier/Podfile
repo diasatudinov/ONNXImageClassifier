@@ -1,0 +1,9 @@
+platform :ios, '17.0'
+use_frameworks! :linkage => :static
+
+target 'ONNXImageClassifier' do
+  pod 'onnxruntime-objc', '1.30.0'
+  target 'ONNXImageClassifierTests' do
+    inherit! :search_paths
+  end
+end
